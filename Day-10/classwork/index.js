@@ -57,7 +57,6 @@ arr[4]="Ranit"
 
 
   let name = "Preet"
-  let class="BCCI
   let sub="FS"
 
   
