@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Box Assignment</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            padding: 50px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .magic-box {
+            width: 200px;
+            height: 200px;
+            background-color: #ff5733;
+            margin: auto;
+            transition: all 0.3s ease-in-out;
+            border-radius: 0;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .magic-box:hover {
+            background-color: #33ff57;
+            transform: scale(1.1);
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .magic-box:active {
+            border-radius: 50%;
+            background-color: #5733ff;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Magic Box Assignment</h1>
+    <div class="magic-box"></div>
+    <footer>© 2025 Magic Box. All rights reserved.</footer>
+</body>
+</html>
