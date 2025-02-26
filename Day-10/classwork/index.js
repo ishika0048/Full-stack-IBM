@@ -16,7 +16,7 @@ console.log(arr)
 
 console.log(arr[arr,length-1])
 arr[4]="Ranit"
- console.log(arr)
+console.log(arr)
    
 
 
