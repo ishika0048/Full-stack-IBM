@@ -1,5 +1,7 @@
 function showdata(array){
 
+}
+
     array.forEach(el => {
         
     let box = document.createElement('div');
@@ -34,4 +36,25 @@ function showdata(array){
 
     document.getElementById("product").append(box)
 
-    }
+    });
+    showData(data)
+    let arr = JSON.parse(localStorage.getItem("Datacart")) || [];
+
+    
+    function addTOcart(el,index){
+
+        for(let i = 0;i<arr;i++){
+            if(arr[i].id == el.id){
+                return alert("data already exists");
+        
+            }
+        }
+        arr.push(el)
+
+localStorage.setItem("Datacart",JSON.stringinfy(arr));
+alert("data added to cart");
+}
+
+function showcart(){
+
+}
