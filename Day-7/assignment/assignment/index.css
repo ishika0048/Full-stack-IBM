@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(19, 50px);
+    grid-template-rows: repeat(6, 50px);
+    gap: 5px;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+.key {
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    position: relative;
+}
+
+.key:hover {
+    background-color: #666;
+    transform: scale(1.1);
+}
+
+.key::after {
+    content: attr(data-key);
+    font-size: 14px;
+}
+
+  /* Special Keys */
+.key.space {
+    grid-column: span 5;
+}
+
+.key.enter {
+    grid-column: span 2;
+}
+
+.key.shift {
+    grid-column: span 3;
+}
+#sh{
+    grid-column: span 2;
+}
+
+.key.backspace {
+    grid-column: span 2;
+}
+
+.key.tab {
+    grid-column: span 2;
+}
+
+.key.caps {
+    grid-column: span 2;
+}
+
+.key.ctrl,
+.key.alt,
+.key.fn {
+    grid-column: span 1;
+}
+#ent{
+    grid-column: span 3;
+
+}
+#zer{
+    grid-column: span 2;
+}
+
+.key.arrow {
+    background-color: #555;
+}
+
+
+.key.num {
+    background-color: #666;
+}
+.key0{
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    position: relative;
+    grid-column: span 2;
+}
+.key1{
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    position: relative;
+    grid-column: span 1;
+}
+.key0:hover {
+    background-color: #666;
+    transform: scale(1.1);
+}
+.key1:hover {
+    background-color: #666;
+    transform: scale(1.1);
+}
+.keypl{
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    position: relative;
+    grid-row: span 2;
+}
+.keypl:hover {
+    background-color: #666;
+    transform: scale(1.1);
+}
+.keyenter{
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    position: relative;
+    grid-row: span 2;
+}
+.keyenter:hover{
+    background-color: #666;
+    transform: scale(1.1);
+}

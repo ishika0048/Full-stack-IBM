@@ -52,7 +52,7 @@ function showdata(array){
         arr.push(el)
 
 localStorage.setItem("Datacart",JSON.stringinfy(arr));
-alert("data added to cart");
+alert("data added to cart"); 
 }
 
 function showcart(){
