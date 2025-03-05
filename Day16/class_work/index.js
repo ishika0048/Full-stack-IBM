@@ -37,7 +37,7 @@
 // setTimeout(()=>{
 //     console.log('settimeout task,Macrotask-3')
 // },  500)
-
+ 
 // queueMicrotask(()=>console.log('QueueMicrotaskk,macrotask-1'));
 
 // console.log("Name,surName");
