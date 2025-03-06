@@ -139,7 +139,8 @@ function populateCityFilter(users) {
     const cities = [...new Set(users.map(user => user.address.city))];
 
     cityDropdown.innerHTML = '<option value="">All Cities</option>' + 
-        cities.map(city => <option value="${city.toLowerCase()}">${city}</option>).join("");
+        cities.map(city => `<option value="${city.toLowerCase()}">${city}</option>`).join("");
+
 }
 
 // Filtering and sorting users
